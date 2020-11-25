@@ -110,17 +110,20 @@ $ cd ..
 
 ```
 ## pwd - Print Work Directory
+Assumindo que fizemos `cd` para a diretoria **PF**
 ```bash
 $ pwd
 /home/matilde/universidade/1ano1sem/PF
 
 ```
 ## Relative vs absolute paths
+Ainda situando-me na diretoria **PF**
+
 ```bash
 $ cd /home/matilde/universidade
 
 ```
-Is equivalent to:
+É equivalente a :
 ```bash
 $ cd ../..
 
