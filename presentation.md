@@ -100,7 +100,7 @@ $ ls
 $ cd 1ano1sem/PF
 ```
 ##
-Return to user's home directory (~)
+Return to user's home directory `/home/matilde`
 ```bash
 $ cd ~
 ```
@@ -115,3 +115,16 @@ $ pwd
 /home/matilde/universidade/1ano1sem/PF
 
 ```
+## Relative vs absolute paths
+```bash
+$ cd /home/matilde/universidade
+
+```
+Is equivalent to:
+```bash
+$ cd ../..
+
+```
+
+
+
