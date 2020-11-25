@@ -4,7 +4,7 @@ all:
       -o index.html --slide-level=2 \
       --metadata pagetitle="Shell basics" \
 	  --highlight-style "./gruvbox.theme" \
-	  new.md \
+	  presentation.md \
       -V theme=moon
 show:
 	xdg-open index.html

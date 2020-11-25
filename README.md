@@ -1,4 +1,3 @@
 # reuniao-aberta
-Slides para reunião aberta CAOS
-
-https://matildeopbravo.github.io/reuniao-aberta/
+Markdown presentation for Shell Basics Talk
+ https://matildeopbravo.github.io/shell-basics/

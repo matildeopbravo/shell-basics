@@ -60,6 +60,33 @@ drwx------ 3 matilde matilde 4096 Nov 25 09:47 .local
 drwxr-xr-x 3 matilde matilde 4096 Nov 25 17:22 universidade
 
 ```
+## man - Manual pages
+```bash
+$ man ls
+
+```
+```
+NAME
+       ls - list directory contents
+
+SYNOPSIS
+       ls [OPTION]... [FILE]...
+
+DESCRIPTION:
+ -a, --all
+        do not ignore entries starting with .
+
+ -l     use a long listing format
+
+ -t     sort by time, newest first; see --time
+
+ -s, --size
+        print the allocated size of each file, in blocks
+
+  -X    sort alphabetically by entry extension
+  ```
+
+
 ## cd - Change directory
 
 ```bash
@@ -72,7 +99,16 @@ $ ls
 ```bash
 $ cd 1ano1sem/PF
 ```
+##
+Return to user's home directory (~)
+```bash
+$ cd ~
+```
+Go back one directory
+```bash
+$ cd ..
 
+```
 ## pwd - Print Work Directory
 ```bash
 $ pwd
