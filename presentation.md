@@ -128,6 +128,144 @@ $ cd /home/matilde/universidade
 $ cd ../..
 
 ```
+# File commands
+## mkdir - Make directory
+```bash
+$ mkdir series
+```
+```bash
+$ mkdir series/mr_robot/season1
+  mkdir: cannot create directory ‘series/mr_robot/season1’: No such file or directory
+```
+
+```bash
+$ mkdir -p series/mr_robot/season1
+```
+
+## touch - Create empty file
+
+```bash
+touch notes
+```
+
+## cat - Display files
 
 
+```bash
+$ cat ficheiro1
+ola
+
+```
+```bash
+$ cat notes
+```
+
+## cp - Copy
+Se estivermos na nossa home, neste caso, `/home/matilde`
+```bash
+$ cp ficheiro1 universidade
+
+```
+Alternativamente, podemos utilizar o **path absoluto**
+
+```bash
+$ cp ~/ficheiro1 ~/universidade
+
+```
+Copiar **recursivamente** para a diretoria atual
+
+```bash
+$ cp -r ~/universidade/1ano1sem .
+
+```
+
+## mv - Move (or rename)
+
+Se estivermos na diretoria `~`
+
+```bash
+$ mv ficheiro1 universidade/1ano1sem/PF
+
+```
+Mudar o nome de uma diretoria
+```bash
+$ mv universidade uni
+
+```
+## rm - Remove
+```bash
+$ rm ~/universidade/1ano1sem/PF/ficheiro1
+```
+```bash
+$ rm  ~/universidade/1ano1sem/LI1
+  rm: cannot remove 'universidade/1ano1sem/LI1/': Is a directory
+```
+Para apagar uma diretoria temos que remover recursivamente
+```bash
+$ rm  -r ~/universidade/1ano1sem/LI1
+```
+Para forçar
+```bash
+$ rm  -rf ~/universidade/1ano1sem/LI1
+
+```
+# Redirection and Pipes
+
+##
+#### Output redirection
+Apresentar texto
+```bash
+$ echo "Hello World"
+Hello World
+```
+Adicionar texto a um ficheiro(overwrite)
+```bash
+$ echo "Hello World" > ficheiro1
+```
+Acrescentar texto a um ficheiro(append)
+```bash
+$ echo "Goodbye" >> ficheiro1
+```
+```bash
+$ cat ficheiro1
+Hello World
+Goodbye
+```
+
+#### Input redirection
+
+Fornecer o conteúdo de um ficheiro como input
+```bash
+$ cat < ficheiro1
+Hello World
+Goodbye
+```
+#### Pipe
+
+Conta o número de ficheiros (não escondidos)
+```bash
+$ ls | wc -l
+
+```
+Mostra o nome dos dois primeiros ficheiros (alfabeticamente)
+```bash
+$ ls | head -2
+```
+Mostra todos os ficheiros com a palavra 'ficheiro' no nome
+```bash
+$ ls | grep "ficheiro"
+ficheiro1
+ficheiro2
+ficheiro3
+ficheiro4
+```
+Mostra o número de caracteres da ultima linha do ficheiro1
+```bash
+$ cat ficheiro1 | tail -1 | wc -m
+```
+Mostra o que está antes do caracter '-' na string fornecida
+```bash
+$ echo "Shell-Basics" | cut -d '-' -f1
+Shell
+```
 

@@ -14,6 +14,7 @@ html * {
 section.has-light-background, section.has-light-background h1, section.has-light-background h2, section.has-light-background h3, section.has-light-background h4, section.has-light-background h5, section.has-light-background h6 {
   color: #222; }
 
+
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
@@ -24,7 +25,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
   --main-color: #93a1a1;
   --block-margin: 20px;
   --heading-margin: 0 0 20px 0;
-  --heading-font: League Gothic, Impact, sans-serif;
+  --heading-font: League Goth2pxpact, sans-serif;
   --heading-color: #eee8d5;
   --heading-line-height: 1.2;
   --heading-letter-spacing: normal;
@@ -41,6 +42,14 @@ section.has-light-background, section.has-light-background h1, section.has-light
   --link-color-hover: #78b9e6;
   --selection-background-color: #d33682;
   --selection-color: #fff; }
+
+.author {
+  font-size: 60px !important;
+}
+
+div.sourceCode {
+  margin:auto !important;
+}
 
 .reveal-viewport {
   background: #002b36;
@@ -105,8 +114,11 @@ section.has-light-background, section.has-light-background h1, section.has-light
  * OTHER
  *********************************************/
 .reveal p {
-  margin: 20px 0;
-  line-height: 1.3; }
+  margin: 10px 0;
+  line-height: 1.3;
+  font-size:23px;
+
+}
 
 /* Remove trailing margins after titles */
 .reveal h1:last-child,

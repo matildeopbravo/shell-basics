@@ -8,8 +8,8 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reset.css">
-  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reveal.css">
+  <link rel="stylesheet" href="./reveal.js/dist/reset.css">
+  <link rel="stylesheet" href="./reveal.js/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -76,13 +76,13 @@
     code span.re { color: #ffcfaf; font-weight: bold; } /* RegionMarker */
     code span.sc { color: #dca3a3; } /* SpecialChar */
     code span.ss { color: #cc9393; } /* SpecialString */
-    code span.st { color: #98971a; } /* String */
+    code span.st { color: #ede73b; } /* String */
     code span.va { color: #458588; } /* Variable */
     code span.vs { color: #cc9393; } /* VerbatimString */
     code span.wa { color: #7f9f7f; font-weight: bold; } /* Warning */
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
-  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/theme/moon.css" id="theme">
+  <link rel="stylesheet" href="./reveal.js/dist/theme/my_moon.css" id="theme">
 </head>
 <body>
   <div class="reveal">
@@ -194,15 +194,103 @@ DESCRIPTION:
 <p>É equivalente a :</p>
 <div class="sourceCode" id="cb14"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>$ <span class="bu">cd</span> ../..</span></code></pre></div>
 </section></section>
+<section>
+<section id="file-commands" class="title-slide slide level1">
+<h1>File commands</h1>
+
+</section>
+<section id="mkdir---make-directory" class="slide level2">
+<h2>mkdir - Make directory</h2>
+<div class="sourceCode" id="cb15"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">mkdir</span> series</span></code></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">mkdir</span> series/mr_robot/season1</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>  <span class="ex">mkdir</span>: cannot create directory ‘series/mr_robot/season1’: No such file or directory</span></code></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">mkdir</span> -p series/mr_robot/season1</span></code></pre></div>
+</section>
+<section id="touch---create-empty-file" class="slide level2">
+<h2>touch - Create empty file</h2>
+<div class="sourceCode" id="cb18"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">touch</span> notes</span></code></pre></div>
+</section>
+<section id="cat---display-files" class="slide level2">
+<h2>cat - Display files</h2>
+<div class="sourceCode" id="cb19"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">cat</span> ficheiro1</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="ex">ola</span></span></code></pre></div>
+<div class="sourceCode" id="cb20"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">cat</span> notes</span></code></pre></div>
+</section>
+<section id="cp---copy" class="slide level2">
+<h2>cp - Copy</h2>
+<p>Se estivermos na nossa home, neste caso, <code>/home/matilde</code></p>
+<div class="sourceCode" id="cb21"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">cp</span> ficheiro1 universidade</span></code></pre></div>
+<p>Alternativamente, podemos utilizar o <strong>path absoluto</strong></p>
+<div class="sourceCode" id="cb22"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">cp</span> ~/ficheiro1 ~/universidade</span></code></pre></div>
+<p>Copiar <strong>recursivamente</strong> para a diretoria atual</p>
+<div class="sourceCode" id="cb23"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">cp</span> -r ~/universidade/1ano1sem .</span></code></pre></div>
+</section>
+<section id="mv---move-or-rename" class="slide level2">
+<h2>mv - Move (or rename)</h2>
+<p>Se estivermos na diretoria <code>~</code></p>
+<div class="sourceCode" id="cb24"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">mv</span> ficheiro1 universidade/1ano1sem/PF</span></code></pre></div>
+<p>Mudar o nome de uma diretoria</p>
+<div class="sourceCode" id="cb25"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">mv</span> universidade uni</span></code></pre></div>
+</section>
+<section id="rm---remove" class="slide level2">
+<h2>rm - Remove</h2>
+<div class="sourceCode" id="cb26"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">rm</span> ~/universidade/1ano1sem/PF/ficheiro1</span></code></pre></div>
+<div class="sourceCode" id="cb27"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">rm</span>  ~/universidade/1ano1sem/LI1</span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>  <span class="ex">rm</span>: cannot remove <span class="st">&#39;universidade/1ano1sem/LI1/&#39;</span>: Is a directory</span></code></pre></div>
+<p>Para apagar uma diretoria temos que remover recursivamente</p>
+<div class="sourceCode" id="cb28"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">rm</span>  -r ~/universidade/1ano1sem/LI1</span></code></pre></div>
+<p>Para forçar</p>
+<div class="sourceCode" id="cb29"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">rm</span>  -rf ~/universidade/1ano1sem/LI1</span></code></pre></div>
+</section></section>
+<section>
+<section id="redirection-and-pipes" class="title-slide slide level1">
+<h1>Redirection and Pipes</h1>
+
+</section>
+<section id="section-2" class="slide level2">
+<h2></h2>
+<h4 id="output-redirection">Output redirection</h4>
+<p>Apresentar texto</p>
+<div class="sourceCode" id="cb30"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>$ <span class="bu">echo</span> <span class="st">&quot;Hello World&quot;</span></span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a><span class="ex">Hello</span> World</span></code></pre></div>
+<p>Adicionar texto a um ficheiro(overwrite)</p>
+<div class="sourceCode" id="cb31"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>$ <span class="bu">echo</span> <span class="st">&quot;Hello World&quot;</span> <span class="op">&gt;</span> ficheiro1</span></code></pre></div>
+<p>Acrescentar texto a um ficheiro(append)</p>
+<div class="sourceCode" id="cb32"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>$ <span class="bu">echo</span> <span class="st">&quot;Goodbye&quot;</span> <span class="op">&gt;&gt;</span> ficheiro1</span></code></pre></div>
+<div class="sourceCode" id="cb33"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">cat</span> ficheiro1</span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a><span class="ex">Hello</span> World</span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a><span class="ex">Goodbye</span></span></code></pre></div>
+<h4 id="input-redirection">Input redirection</h4>
+<p>Fornecer o conteúdo de um ficheiro como input</p>
+<div class="sourceCode" id="cb34"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">cat</span> <span class="op">&lt;</span> ficheiro1</span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a><span class="ex">Hello</span> World</span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a><span class="ex">Goodbye</span></span></code></pre></div>
+<h4 id="pipe">Pipe</h4>
+<p>Conta o número de ficheiros (não escondidos)</p>
+<div class="sourceCode" id="cb35"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">ls</span> <span class="kw">|</span> <span class="fu">wc</span> -l</span></code></pre></div>
+<p>Mostra o nome dos dois primeiros ficheiros (alfabeticamente)</p>
+<div class="sourceCode" id="cb36"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">ls</span> <span class="kw">|</span> <span class="fu">head</span> -2</span></code></pre></div>
+<p>Mostra todos os ficheiros com a palavra ‘ficheiro’ no nome</p>
+<div class="sourceCode" id="cb37"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">ls</span> <span class="kw">|</span> <span class="fu">grep</span> <span class="st">&quot;ficheiro&quot;</span></span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a><span class="ex">ficheiro1</span></span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a><span class="ex">ficheiro2</span></span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a><span class="ex">ficheiro3</span></span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a><span class="ex">ficheiro4</span></span></code></pre></div>
+<p>Mostra o número de caracteres da ultima linha do ficheiro1</p>
+<div class="sourceCode" id="cb38"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">cat</span> ficheiro1 <span class="kw">|</span> <span class="fu">tail</span> -1 <span class="kw">|</span> <span class="fu">wc</span> -m</span></code></pre></div>
+<p>Mostra o que está antes do caracter ‘-’ na string fornecida</p>
+<div class="sourceCode" id="cb39"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>$ <span class="bu">echo</span> <span class="st">&quot;Shell-Basics&quot;</span> <span class="kw">|</span> <span class="fu">cut</span> -d <span class="st">&#39;-&#39;</span> -f1</span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a><span class="ex">Shell</span></span></code></pre></div>
+</section></section>
     </div>
   </div>
 
-  <script src="https://unpkg.com/reveal.js@^4//dist/reveal.js"></script>
+  <script src="./reveal.js/dist/reveal.js"></script>
 
   // reveal.js plugins
-  <script src="https://unpkg.com/reveal.js@^4//plugin/notes/notes.js"></script>
-  <script src="https://unpkg.com/reveal.js@^4//plugin/search/search.js"></script>
-  <script src="https://unpkg.com/reveal.js@^4//plugin/zoom/zoom.js"></script>
+  <script src="./reveal.js/plugin/notes/notes.js"></script>
+  <script src="./reveal.js/plugin/search/search.js"></script>
+  <script src="./reveal.js/plugin/zoom/zoom.js"></script>
 
   <script>
 

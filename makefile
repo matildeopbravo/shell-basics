@@ -5,7 +5,8 @@ all:
       --metadata pagetitle="Shell basics" \
 	  --highlight-style "./gruvbox.theme" \
 	  presentation.md \
-      -V theme=moon
+	  -V revealjs-url=./reveal.js \
+      -V theme=my_moon
 show:
 	xdg-open index.html
 auto:
