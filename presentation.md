@@ -232,7 +232,7 @@ Hello World
 Goodbye
 ```
 
-#### Input redirection
+## Input redirection
 
 Fornecer o conteúdo de um ficheiro como input
 ```bash
