@@ -287,7 +287,11 @@ rm ficheiro*
 
 ```
 ## Useful Tips
-- `CTRL-L` ou `clear` para limpar o ecrã
 - Navegar histórico com ↑ e ↓
+- Tab completion
+- `CTRL-L` ou `clear` para limpar o ecrã
 - Reverse Search com `CTRL-R`
 - !! para repetir o comando anterior (eg: sudo !!)
+
+##
+<img src="./img/miscellaneous.gif" width="1300" heig6t=600"/>
