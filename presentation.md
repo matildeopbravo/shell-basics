@@ -211,8 +211,7 @@ $ rm  -rf ~/universidade/1ano1sem/LI1
 ```
 # Redirection and Pipes
 
-##
-#### Output redirection
+## Output redirection
 Apresentar texto
 ```bash
 $ echo "Hello World"
