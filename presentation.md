@@ -128,7 +128,7 @@ $ cd /home/matilde/universidade
 $ cd ../..
 
 ```
-# File commands
+# Creating, deleting and displaying files
 ## mkdir - Make directory
 ```bash
 $ mkdir series
@@ -240,7 +240,7 @@ $ cat < ficheiro1
 Hello World
 Goodbye
 ```
-#### Pipe
+#### Pipes
 
 Conta o número de ficheiros (não escondidos)
 ```bash
@@ -251,6 +251,7 @@ Mostra o nome dos dois primeiros ficheiros (alfabeticamente)
 ```bash
 $ ls | head -2
 ```
+##
 Mostra todos os ficheiros com a palavra 'ficheiro' no nome
 ```bash
 $ ls | grep "ficheiro"
@@ -268,4 +269,26 @@ Mostra o que está antes do caracter '-' na string fornecida
 $ echo "Shell-Basics" | cut -d '-' -f1
 Shell
 ```
+# Miscellaneous
+## Globbing
 
+Mostra todos os ficheiros que terminam em  `.hs`
+```bash
+$ ls *.hs
+
+```
+Copia todos os ficheiros da diretoria atual para a `new_directory`
+```bash
+$ cp ./* new_directory
+
+```
+Apaga todos os ficheiros começados por 'ficheiro'
+```bash
+rm ficheiro*
+
+```
+## Useful Tips
+- `CTRL-L` ou `clear` para limpar o ecrã
+- Navegar histórico com ↑ e ↓
+- Reverse Search com `CTRL-R`
+- !! para repetir o comando anterior (eg: sudo !!)
