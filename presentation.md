@@ -120,7 +120,11 @@ Return to user's home directory **`/home/matilde`**
 ```bash
 $ cd ~ # ou apenas cd
 ```
+
+**/** represents **root** directory
+
 ## Relative vs absolute paths
+
 
 Situando-me na diretoria **PF**
 
