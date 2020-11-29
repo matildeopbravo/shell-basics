@@ -3,11 +3,22 @@ title: Shell Basics
 author: Matilde Bravo
 
 ---
+# Introdução
+## Shell
+Programa que permite a comunicação com o **Sistema Operativo**
 
+e.g: **Bash**
+
+## Terminal
+Interface que permite utilizar a **Shell**
+
+e.g: **Konsole**
 
 # Basic Commands
 
 ## File tree example
+
+`.` simboliza a diretoria atual
 
 ```bash
 .
@@ -244,11 +255,13 @@ Goodbye
 Conta o número de ficheiros (não escondidos)
 ```bash
 $ ls | wc -l
-
+5
 ```
 Mostra o nome dos dois primeiros ficheiros (alfabeticamente)
 ```bash
 $ ls | head -2
+ficheiro1
+ficheiro2
 ```
 ##
 Mostra todos os ficheiros com a palavra 'ficheiro' no nome
@@ -262,6 +275,7 @@ ficheiro4
 Mostra o número de caracteres da ultima linha do ficheiro1
 ```bash
 $ cat ficheiro1 | tail -1 | wc -m
+8
 ```
 Mostra o que está antes do caracter '-' na string fornecida
 ```bash
@@ -283,7 +297,7 @@ $ cp ./* new_directory
 ```
 Apaga todos os ficheiros começados por 'ficheiro'
 ```bash
-rm ficheiro*
+$ rm ficheiro*
 
 ```
 ## Useful Tips
@@ -295,3 +309,55 @@ rm ficheiro*
 
 ##
 <img src="./img/miscellaneous.gif" width="1300" heig6t=600"/>
+
+# Installing
+## Package Manager
+- apt/apt-get (e.g: Ubuntu,PopOS)
+- pacman (eg: Manjaro)
+
+##
+#### Install a package
+
+```bash
+$ sudo apt install curl
+$ sudo pacman -S curl
+```
+#### Update Database
+```bash
+$ sudo apt update
+$ sudo pacman -Syy
+```
+##
+#### Upgrade
+```bash
+$ sudo apt upgrade
+$ sudo pacman -Syu
+```
+
+#### List installed packages
+```bash
+$ sudo apt list --installed
+$ sudo pacman -Qe
+
+```
+
+## Web transfer
+```bash
+$ curl https://cesium.di.uminho.pt/
+```
+```bash
+$ curl https://cesium.di.uminho.pt/ > file
+```
+```bash
+$ curl https://cesium.di.uminho.pt/ | grep 'estudantes'
+
+```
+##
+```bash
+$ wget "https://bit.ly/2HNtDEN" -o cesiumlogo.png
+
+```
+
+
+
+
