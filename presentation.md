@@ -142,10 +142,18 @@ $ cd /home/matilde/universidade
 
 ```
 É equivalente a :
+
+```bash
+$ cd ~/universidade
+
+```
+E a :
+
 ```bash
 $ cd ../..
 
 ```
+
 ## pwd - Print Work Directory
 Assumindo que fizemos **`cd`** para a diretoria **PF**
 ```bash
