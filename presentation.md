@@ -113,7 +113,7 @@ $ cd 1ano1sem/PF
 ##
 Return to user's home directory `/home/matilde`
 ```bash
-$ cd ~
+$ cd ~ # ou apenas cd
 ```
 Go back one directory
 ```bash
@@ -282,33 +282,6 @@ Mostra o que está antes do caracter '-' na string fornecida
 $ echo "Shell-Basics" | cut -d '-' -f1
 Shell
 ```
-# Miscellaneous
-## Globbing
-
-Mostra todos os ficheiros que terminam em  `.hs`
-```bash
-$ ls *.hs
-
-```
-Copia todos os ficheiros da diretoria atual para a `new_directory`
-```bash
-$ cp ./* new_directory
-
-```
-Apaga todos os ficheiros começados por 'ficheiro'
-```bash
-$ rm ficheiro*
-
-```
-## Useful Tips
-- Navegar histórico com ↑ e ↓
-- Tab completion
-- `CTRL-L` ou `clear` para limpar o ecrã
-- Reverse Search com `CTRL-R`
-- !! para repetir o comando anterior (eg: sudo !!)
-
-##
-<img src="./img/miscellaneous.gif" width="1300" heig6t=600"/>
 
 # Installing
 ## Package Manager
@@ -352,12 +325,71 @@ $ curl https://cesium.di.uminho.pt/ > file
 $ curl https://cesium.di.uminho.pt/ | grep 'estudantes'
 
 ```
-##
 ```bash
 $ wget "https://bit.ly/2HNtDEN" -o cesiumlogo.png
 
 ```
 
+# Miscellaneous
+## Globbing
 
+Mostra todos os ficheiros que terminam em  `.hs`
+```bash
+$ ls *.hs
+
+```
+Copia todos os ficheiros da diretoria atual para a `new_directory`
+```bash
+$ cp * new_directory
+
+```
+Apaga todos os ficheiros começados por 'ficheiro'
+```bash
+$ rm ficheiro*
+
+```
+
+## Operators
+
+```bash
+git commit -m "new commit" && git push
+```
+```bash
+cd ~/universidade/1ano1sem/PF ; code ficha1
+```
+```bash
+cd ~/universidade || cd ~/uni
+```
+
+## Finding
+
+```bash
+find . -name ficheiro1
+./ficheiro1
+```
+```bash
+find . -name "*ficheiro"
+./ficheiro3
+./ficheiro1
+./ficheiro2
+./ficheiro4
+```
+
+```bash
+find ~/Pictures "*.jpg"
+
+```
+## Useful Tips
+- Navegar histórico com ↑ e ↓
+- Tab completion
+- `CTRL-L` ou `clear` para limpar o ecrã
+- Reverse Search com `CTRL-R`
+- !! para repetir o comando anterior (eg: sudo !!)
+
+##
+<img src="./img/miscellaneous.gif" width="1300" heig6t=600"/>
+
+
+# Questões
 
 
