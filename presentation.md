@@ -147,7 +147,7 @@ $ cd /home/matilde/universidade
 $ cd ~/universidade
 
 ```
-E a :
+E também a :
 
 ```bash
 $ cd ../..
