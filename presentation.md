@@ -122,10 +122,17 @@ $ cd ~ # ou apenas cd
 ```
 ## Relative vs absolute paths
 
-<p> Situando-me na diretoria **PF** </p>
-<p style="text-align:justify"> <span id="line">-</span> Caminho relativo até à diretoria LI1 -> **`../LI1`** </p>
-<p> Caminho absoluto até à diretoria LI1 -> **`/home/matilde/universidade/1ano1sem/LI1`** </p>
+Situando-me na diretoria **PF**
 
+Caminho relativo até à diretoria **LI1**
+```bash
+$ cd ../LI1
+```
+<p> Caminho absoluto até à diretoria **LI1** </p>
+```bash
+$ cd /home/matilde/universidade/1ano1sem/LI1
+```
+##
 ```bash
 $ cd /home/matilde/universidade
 
