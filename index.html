@@ -206,23 +206,31 @@ DESCRIPTION:
 </section>
 <section id="section-3" class="slide level2">
 <h2></h2>
-<p>Return to user’s home directory <strong><code>/home/matilde</code></strong></p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>$ <span class="bu">cd</span> ~ <span class="co"># ou apenas cd</span></span></code></pre></div>
 <p>Go back one directory</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>$ <span class="bu">cd</span> ..</span></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>$ <span class="bu">cd</span> ..</span></code></pre></div>
+<p>Return to user’s home directory <strong><code>/home/matilde</code></strong></p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>$ <span class="bu">cd</span> ~ <span class="co"># ou apenas cd</span></span></code></pre></div>
+</section>
+<section id="relative-vs-absolute-paths" class="slide level2">
+<h2>Relative vs absolute paths</h2>
+<p>
+Situando-me na diretoria <strong>PF</strong>
+</p>
+<p style="text-align:justify">
+<span id="line">-</span> Caminho relativo até à diretoria LI1 -&gt; <strong><code>../LI1</code></strong>
+</p>
+<p>
+Caminho absoluto até à diretoria LI1 -&gt; <strong><code>/home/matilde/universidade/1ano1sem/LI1</code></strong>
+</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>$ <span class="bu">cd</span> /home/matilde/universidade</span></code></pre></div>
+<p>É equivalente a :</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>$ <span class="bu">cd</span> ../..</span></code></pre></div>
 </section>
 <section id="pwd---print-work-directory" class="slide level2">
 <h2>pwd - Print Work Directory</h2>
 <p>Assumindo que fizemos <strong><code>cd</code></strong> para a diretoria <strong>PF</strong></p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>$ <span class="bu">pwd</span></span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="ex">/home/matilde/universidade/1ano1sem/PF</span></span></code></pre></div>
-</section>
-<section id="relative-vs-absolute-paths" class="slide level2">
-<h2>Relative vs absolute paths</h2>
-<p>Ainda situando-me na diretoria <strong>PF</strong></p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>$ <span class="bu">cd</span> /home/matilde/universidade</span></code></pre></div>
-<p>É equivalente a :</p>
-<div class="sourceCode" id="cb14"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>$ <span class="bu">cd</span> ../..</span></code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>$ <span class="bu">pwd</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="ex">/home/matilde/universidade/1ano1sem/PF</span></span></code></pre></div>
 </section></section>
 <section>
 <section id="creating-deleting-and-displaying-files" class="title-slide slide level1">

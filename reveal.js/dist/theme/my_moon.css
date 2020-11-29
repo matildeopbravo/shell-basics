@@ -47,6 +47,11 @@ section.has-light-background, section.has-light-background h1, section.has-light
   font-size:30px !important;
 }
 
+#line {
+  font-color:#002b36;
+  color:#002b36;
+}
+
 .author {
   font-size: 60px !important;
 }

@@ -111,24 +111,20 @@ $ ls
 $ cd 1ano1sem/PF
 ```
 ##
-Return to user's home directory **`/home/matilde`**
-```bash
-$ cd ~ # ou apenas cd
-```
 Go back one directory
 ```bash
 $ cd ..
 
 ```
-## pwd - Print Work Directory
-Assumindo que fizemos **`cd`** para a diretoria **PF**
+Return to user's home directory **`/home/matilde`**
 ```bash
-$ pwd
-/home/matilde/universidade/1ano1sem/PF
-
+$ cd ~ # ou apenas cd
 ```
 ## Relative vs absolute paths
-Ainda situando-me na diretoria **PF**
+
+<p> Situando-me na diretoria **PF** </p>
+<p style="text-align:justify"> <span id="line">-</span> Caminho relativo até à diretoria LI1 -> **`../LI1`** </p>
+<p> Caminho absoluto até à diretoria LI1 -> **`/home/matilde/universidade/1ano1sem/LI1`** </p>
 
 ```bash
 $ cd /home/matilde/universidade
@@ -137,6 +133,13 @@ $ cd /home/matilde/universidade
 É equivalente a :
 ```bash
 $ cd ../..
+
+```
+## pwd - Print Work Directory
+Assumindo que fizemos **`cd`** para a diretoria **PF**
+```bash
+$ pwd
+/home/matilde/universidade/1ano1sem/PF
 
 ```
 # Creating, deleting and displaying files
