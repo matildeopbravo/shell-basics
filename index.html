@@ -103,15 +103,24 @@
 <h1>
 Shell
 </h1>
-<p>
+<p class="first">
 Programa que permite a comunicação com o <strong>Sistema Operativo</strong>
 </p>
-<p>e.g: <strong>Bash</strong></p>
+<p class="first">
+e.g: <strong>Bash</strong>
+</p>
 </section>
-<section id="terminal" class="slide level2">
-<h2>Terminal</h2>
-<p>Interface que permite utilizar a <strong>Shell</strong></p>
-<p>e.g: <strong>Konsole</strong></p>
+<section id="section-1" class="slide level2">
+<h2></h2>
+<h1>
+Terminal
+</h1>
+<p class="first">
+Interface que permite utilizar a <strong>Shell</strong>
+</p>
+<p class="first">
+e.g: <strong>Konsole</strong>
+</p>
 </section></section>
 <section>
 <section id="basic-commands" class="title-slide slide level1">
@@ -147,7 +156,7 @@ Programa que permite a comunicação com o <strong>Sistema Operativo</strong>
 <span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="ex">-rw-r--r--</span> 1 matilde matilde    0 Nov 24 21:16 ficheiro3</span>
 <span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="ex">-rw-r--r--</span> 1 matilde matilde    0 Nov 24 21:16 ficheiro4</span></code></pre></div>
 </section>
-<section id="section-1" class="slide level2">
+<section id="section-2" class="slide level2">
 <h2></h2>
 <div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">ls</span> -la <span class="co"># ls -l -a</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ex">total</span> 44</span>
@@ -195,16 +204,16 @@ DESCRIPTION:
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="ex">1ano1sem</span></span></code></pre></div>
 <div class="sourceCode" id="cb9"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>$ <span class="bu">cd</span> 1ano1sem/PF</span></code></pre></div>
 </section>
-<section id="section-2" class="slide level2">
+<section id="section-3" class="slide level2">
 <h2></h2>
-<p>Return to user’s home directory <code>/home/matilde</code></p>
+<p>Return to user’s home directory <strong><code>/home/matilde</code></strong></p>
 <div class="sourceCode" id="cb10"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>$ <span class="bu">cd</span> ~ <span class="co"># ou apenas cd</span></span></code></pre></div>
 <p>Go back one directory</p>
 <div class="sourceCode" id="cb11"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>$ <span class="bu">cd</span> ..</span></code></pre></div>
 </section>
 <section id="pwd---print-work-directory" class="slide level2">
 <h2>pwd - Print Work Directory</h2>
-<p>Assumindo que fizemos <code>cd</code> para a diretoria <strong>PF</strong></p>
+<p>Assumindo que fizemos <strong><code>cd</code></strong> para a diretoria <strong>PF</strong></p>
 <div class="sourceCode" id="cb12"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>$ <span class="bu">pwd</span></span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="ex">/home/matilde/universidade/1ano1sem/PF</span></span></code></pre></div>
 </section>
@@ -296,7 +305,7 @@ DESCRIPTION:
 <span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a><span class="ex">ficheiro1</span></span>
 <span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a><span class="ex">ficheiro2</span></span></code></pre></div>
 </section>
-<section id="section-3" class="slide level2">
+<section id="section-4" class="slide level2">
 <h2></h2>
 <p>Mostra todos os ficheiros com a palavra ‘ficheiro’ no nome</p>
 <div class="sourceCode" id="cb37"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">ls</span> <span class="kw">|</span> <span class="fu">grep</span> <span class="st">&quot;ficheiro&quot;</span></span>
@@ -323,7 +332,7 @@ DESCRIPTION:
 <li>pacman (eg: Manjaro)</li>
 </ul>
 </section>
-<section id="section-4" class="slide level2">
+<section id="section-5" class="slide level2">
 <h2></h2>
 <h4 id="install-a-package">Install a package</h4>
 <div class="sourceCode" id="cb40"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">sudo</span> apt install curl</span>
@@ -332,7 +341,7 @@ DESCRIPTION:
 <div class="sourceCode" id="cb41"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">sudo</span> apt update</span>
 <span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">sudo</span> pacman -Syy</span></code></pre></div>
 </section>
-<section id="section-5" class="slide level2">
+<section id="section-6" class="slide level2">
 <h2></h2>
 <h4 id="upgrade">Upgrade</h4>
 <div class="sourceCode" id="cb42"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">sudo</span> apt upgrade</span>
@@ -382,14 +391,14 @@ DESCRIPTION:
 <section id="useful-tips" class="slide level2">
 <h2>Useful Tips</h2>
 <ul>
-<li>Navegar histórico com <span style="color:white">↑</span> e <span style="color:white">↓</span></li>
-<li><span style="color:white">Tab</span> completion</li>
-<li><span style="color:white">CTRL-L</span> ou <span style="color:white"><code>clear</code></span> para limpar o ecrã</li>
-<li>Reverse search com <span style="color:white">CTRL-R</span></li>
-<li><span style="color:white">!!</span> para repetir o comando anterior (eg: sudo !!)</li>
+<li>Navegar histórico com <strong>↑</strong> e <strong>↓</strong></li>
+<li><strong>Tab</strong> completion</li>
+<li><strong>CTRL-L</strong> ou <strong><code>clear</code></strong> para limpar o ecrã</li>
+<li>Reverse search com <strong>CTRL-R</strong></li>
+<li><strong>!!</strong> para repetir o comando anterior (eg: sudo !!)</li>
 </ul>
 </section>
-<section id="section-6" class="slide level2">
+<section id="section-7" class="slide level2">
 <h2></h2>
 <p><img src="./img/miscellaneous.gif" width="1300" height=600"/></p>
 </section></section>

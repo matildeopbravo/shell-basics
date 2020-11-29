@@ -6,14 +6,13 @@ author: Matilde Bravo
 # Introdução
 ##
 <h1> Shell </h1>
-<p> Programa que permite a comunicação com o **Sistema Operativo** </p>
+<p class="first"> Programa que permite a comunicação com o **Sistema Operativo** </p>
+<p class="first">e.g: **Bash** </p>
 
-e.g: **Bash**
-
-## Terminal
-Interface que permite utilizar a **Shell**
-
-e.g: **Konsole**
+##
+<h1> Terminal </h1>
+<p class="first"> Interface que permite utilizar a **Shell** </p>
+<p class="first">e.g: **Konsole** </p>
 
 # Basic Commands
 
@@ -112,7 +111,7 @@ $ ls
 $ cd 1ano1sem/PF
 ```
 ##
-Return to user's home directory `/home/matilde`
+Return to user's home directory **`/home/matilde`**
 ```bash
 $ cd ~ # ou apenas cd
 ```
@@ -122,7 +121,7 @@ $ cd ..
 
 ```
 ## pwd - Print Work Directory
-Assumindo que fizemos `cd` para a diretoria **PF**
+Assumindo que fizemos **`cd`** para a diretoria **PF**
 ```bash
 $ pwd
 /home/matilde/universidade/1ano1sem/PF
@@ -381,11 +380,11 @@ find ~/Pictures -name "*.jpg"
 
 ```
 ## Useful Tips
-- Navegar histórico com <span style="color:white">↑</span> e <span style="color:white">↓</span>
-- <span style="color:white">Tab</span> completion
-- <span style="color:white">CTRL-L</span> ou <span style="color:white">`clear`</span> para limpar o ecrã
-- Reverse search com <span style="color:white">CTRL-R</span>
-- <span style="color:white">!!</span> para repetir o comando anterior (eg: sudo !!)
+- Navegar histórico com **↑** e **↓**
+- **Tab** completion
+- **CTRL-L** ou **`clear`** para limpar o ecrã
+- Reverse search com **CTRL-R**
+- **!!** para repetir o comando anterior (eg: sudo !!)
 
 ##
 <img src="./img/miscellaneous.gif" width="1300" height=600"/>

@@ -43,6 +43,10 @@ section.has-light-background, section.has-light-background h1, section.has-light
   --selection-background-color: #d33682;
   --selection-color: #fff; }
 
+.first {
+  font-size:30px !important;
+}
+
 .author {
   font-size: 60px !important;
 }
@@ -138,7 +142,10 @@ div.sourceCode {
 
 .reveal strong,
 .reveal b {
-  font-weight: bold; }
+  font-weight: bold;
+  color:#eee8d5;
+
+}
 
 .reveal em {
   font-style: italic; }
