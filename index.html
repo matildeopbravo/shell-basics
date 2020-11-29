@@ -98,9 +98,14 @@
 <h1>Introdução</h1>
 
 </section>
-<section id="shell" class="slide level2">
-<h2>Shell</h2>
-<p>Programa que permite a comunicação com o <strong>Sistema Operativo</strong></p>
+<section id="section" class="slide level2">
+<h2></h2>
+<h1>
+Shell
+</h1>
+<p>
+Programa que permite a comunicação com o <strong>Sistema Operativo</strong>
+</p>
 <p>e.g: <strong>Bash</strong></p>
 </section>
 <section id="terminal" class="slide level2">
@@ -142,7 +147,7 @@
 <span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="ex">-rw-r--r--</span> 1 matilde matilde    0 Nov 24 21:16 ficheiro3</span>
 <span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="ex">-rw-r--r--</span> 1 matilde matilde    0 Nov 24 21:16 ficheiro4</span></code></pre></div>
 </section>
-<section id="section" class="slide level2">
+<section id="section-1" class="slide level2">
 <h2></h2>
 <div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">ls</span> -la <span class="co"># ls -l -a</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ex">total</span> 44</span>
@@ -190,7 +195,7 @@ DESCRIPTION:
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="ex">1ano1sem</span></span></code></pre></div>
 <div class="sourceCode" id="cb9"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>$ <span class="bu">cd</span> 1ano1sem/PF</span></code></pre></div>
 </section>
-<section id="section-1" class="slide level2">
+<section id="section-2" class="slide level2">
 <h2></h2>
 <p>Return to user’s home directory <code>/home/matilde</code></p>
 <div class="sourceCode" id="cb10"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>$ <span class="bu">cd</span> ~ <span class="co"># ou apenas cd</span></span></code></pre></div>
@@ -291,7 +296,7 @@ DESCRIPTION:
 <span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a><span class="ex">ficheiro1</span></span>
 <span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a><span class="ex">ficheiro2</span></span></code></pre></div>
 </section>
-<section id="section-2" class="slide level2">
+<section id="section-3" class="slide level2">
 <h2></h2>
 <p>Mostra todos os ficheiros com a palavra ‘ficheiro’ no nome</p>
 <div class="sourceCode" id="cb37"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">ls</span> <span class="kw">|</span> <span class="fu">grep</span> <span class="st">&quot;ficheiro&quot;</span></span>
@@ -318,7 +323,7 @@ DESCRIPTION:
 <li>pacman (eg: Manjaro)</li>
 </ul>
 </section>
-<section id="section-3" class="slide level2">
+<section id="section-4" class="slide level2">
 <h2></h2>
 <h4 id="install-a-package">Install a package</h4>
 <div class="sourceCode" id="cb40"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">sudo</span> apt install curl</span>
@@ -327,7 +332,7 @@ DESCRIPTION:
 <div class="sourceCode" id="cb41"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">sudo</span> apt update</span>
 <span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">sudo</span> pacman -Syy</span></code></pre></div>
 </section>
-<section id="section-4" class="slide level2">
+<section id="section-5" class="slide level2">
 <h2></h2>
 <h4 id="upgrade">Upgrade</h4>
 <div class="sourceCode" id="cb42"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">sudo</span> apt upgrade</span>
@@ -338,9 +343,9 @@ DESCRIPTION:
 </section>
 <section id="web-transfer" class="slide level2">
 <h2>Web transfer</h2>
-<div class="sourceCode" id="cb44"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>$ <span class="ex">curl</span> https://cesium.di.uminho.pt/</span></code></pre></div>
-<div class="sourceCode" id="cb45"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>$ <span class="ex">curl</span> https://cesium.di.uminho.pt/ <span class="op">&gt;</span> file</span></code></pre></div>
-<div class="sourceCode" id="cb46"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>$ <span class="ex">curl</span> https://cesium.di.uminho.pt/ <span class="kw">|</span> <span class="fu">grep</span> <span class="st">&#39;estudantes&#39;</span></span></code></pre></div>
+<div class="sourceCode" id="cb44"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">curl</span> <span class="st">&quot;https://cesium.di.uminho.pt&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb45"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">curl</span> <span class="st">&quot;https://cesium.di.uminho.pt&quot;</span> <span class="op">&gt;</span> file</span></code></pre></div>
+<div class="sourceCode" id="cb46"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">curl</span> <span class="st">&quot;https://cesium.di.uminho.pt&quot;</span> <span class="kw">|</span> <span class="fu">grep</span> <span class="st">&#39;estudantes&#39;</span></span></code></pre></div>
 <div class="sourceCode" id="cb47"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">wget</span> <span class="st">&quot;https://bit.ly/2HNtDEN&quot;</span> -o cesiumlogo.png</span></code></pre></div>
 </section></section>
 <section>
@@ -367,26 +372,26 @@ DESCRIPTION:
 <h2>Finding</h2>
 <div class="sourceCode" id="cb54"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a><span class="fu">find</span> . -name ficheiro1</span>
 <span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a><span class="ex">./ficheiro1</span></span></code></pre></div>
-<div class="sourceCode" id="cb55"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="fu">find</span> . -name <span class="st">&quot;*ficheiro&quot;</span></span>
+<div class="sourceCode" id="cb55"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="fu">find</span> . -name <span class="st">&quot;ficheiro*&quot;</span></span>
 <span id="cb55-2"><a href="#cb55-2" aria-hidden="true" tabindex="-1"></a><span class="ex">./ficheiro3</span></span>
 <span id="cb55-3"><a href="#cb55-3" aria-hidden="true" tabindex="-1"></a><span class="ex">./ficheiro1</span></span>
 <span id="cb55-4"><a href="#cb55-4" aria-hidden="true" tabindex="-1"></a><span class="ex">./ficheiro2</span></span>
 <span id="cb55-5"><a href="#cb55-5" aria-hidden="true" tabindex="-1"></a><span class="ex">./ficheiro4</span></span></code></pre></div>
-<div class="sourceCode" id="cb56"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a><span class="fu">find</span> ~/Pictures <span class="st">&quot;*.jpg&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb56"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a><span class="fu">find</span> ~/Pictures -name <span class="st">&quot;*.jpg&quot;</span></span></code></pre></div>
 </section>
 <section id="useful-tips" class="slide level2">
 <h2>Useful Tips</h2>
 <ul>
-<li>Navegar histórico com ↑ e ↓</li>
-<li>Tab completion</li>
-<li><code>CTRL-L</code> ou <code>clear</code> para limpar o ecrã</li>
-<li>Reverse Search com <code>CTRL-R</code></li>
-<li>!! para repetir o comando anterior (eg: sudo !!)</li>
+<li>Navegar histórico com <span style="color:white">↑</span> e <span style="color:white">↓</span></li>
+<li><span style="color:white">Tab</span> completion</li>
+<li><span style="color:white">CTRL-L</span> ou <span style="color:white"><code>clear</code></span> para limpar o ecrã</li>
+<li>Reverse search com <span style="color:white">CTRL-R</span></li>
+<li><span style="color:white">!!</span> para repetir o comando anterior (eg: sudo !!)</li>
 </ul>
 </section>
-<section id="section-5" class="slide level2">
+<section id="section-6" class="slide level2">
 <h2></h2>
-<p><img src="./img/miscellaneous.gif" width="1300" heig6t=600"/></p>
+<p><img src="./img/miscellaneous.gif" width="1300" height=600"/></p>
 </section></section>
 <section id="questões" class="title-slide slide level1">
 <h1>Questões</h1>

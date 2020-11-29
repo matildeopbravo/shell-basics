@@ -4,8 +4,9 @@ author: Matilde Bravo
 
 ---
 # Introdução
-## Shell
-Programa que permite a comunicação com o **Sistema Operativo**
+##
+<h1> Shell </h1>
+<p> Programa que permite a comunicação com o **Sistema Operativo** </p>
 
 e.g: **Bash**
 
@@ -316,13 +317,13 @@ $ sudo pacman -Qe
 
 ## Web transfer
 ```bash
-$ curl https://cesium.di.uminho.pt/
+$ curl "https://cesium.di.uminho.pt"
 ```
 ```bash
-$ curl https://cesium.di.uminho.pt/ > file
+$ curl "https://cesium.di.uminho.pt" > file
 ```
 ```bash
-$ curl https://cesium.di.uminho.pt/ | grep 'estudantes'
+$ curl "https://cesium.di.uminho.pt" | grep 'estudantes'
 
 ```
 ```bash
@@ -368,7 +369,7 @@ find . -name ficheiro1
 ./ficheiro1
 ```
 ```bash
-find . -name "*ficheiro"
+find . -name "ficheiro*"
 ./ficheiro3
 ./ficheiro1
 ./ficheiro2
@@ -376,18 +377,18 @@ find . -name "*ficheiro"
 ```
 
 ```bash
-find ~/Pictures "*.jpg"
+find ~/Pictures -name "*.jpg"
 
 ```
 ## Useful Tips
-- Navegar histórico com ↑ e ↓
-- Tab completion
-- `CTRL-L` ou `clear` para limpar o ecrã
-- Reverse Search com `CTRL-R`
-- !! para repetir o comando anterior (eg: sudo !!)
+- Navegar histórico com <span style="color:white">↑</span> e <span style="color:white">↓</span>
+- <span style="color:white">Tab</span> completion
+- <span style="color:white">CTRL-L</span> ou <span style="color:white">`clear`</span> para limpar o ecrã
+- Reverse search com <span style="color:white">CTRL-R</span>
+- <span style="color:white">!!</span> para repetir o comando anterior (eg: sudo !!)
 
 ##
-<img src="./img/miscellaneous.gif" width="1300" heig6t=600"/>
+<img src="./img/miscellaneous.gif" width="1300" height=600"/>
 
 
 # Questões
