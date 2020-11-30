@@ -250,11 +250,11 @@ Apresentar texto
 $ echo "Hello World"
 Hello World
 ```
-Adicionar texto a um ficheiro(overwrite)
+Adicionar texto a um ficheiro (overwrite)
 ```bash
 $ echo "Hello World" > ficheiro1
 ```
-Acrescentar texto a um ficheiro(append)
+Acrescentar texto a um ficheiro (append)
 ```bash
 $ echo "Goodbye" >> ficheiro1
 ```
