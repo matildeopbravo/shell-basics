@@ -227,7 +227,7 @@ Caminho absoluto até à diretoria <strong>LI1</strong>
 <div class="sourceCode" id="cb14"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>$ <span class="bu">cd</span> /home/matilde/universidade</span></code></pre></div>
 <p>É equivalente a :</p>
 <div class="sourceCode" id="cb15"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>$ <span class="bu">cd</span> ~/universidade</span></code></pre></div>
-<p>E a :</p>
+<p>E também a :</p>
 <div class="sourceCode" id="cb16"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>$ <span class="bu">cd</span> ../..</span></code></pre></div>
 </section>
 <section id="pwd---print-work-directory" class="slide level2">
@@ -400,6 +400,32 @@ Caminho absoluto até à diretoria <strong>LI1</strong>
 <span id="cb58-4"><a href="#cb58-4" aria-hidden="true" tabindex="-1"></a><span class="ex">./ficheiro2</span></span>
 <span id="cb58-5"><a href="#cb58-5" aria-hidden="true" tabindex="-1"></a><span class="ex">./ficheiro4</span></span></code></pre></div>
 <div class="sourceCode" id="cb59"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a><span class="fu">find</span> ~/Pictures -name <span class="st">&quot;*.jpg&quot;</span></span></code></pre></div>
+</section>
+<section id="grep" class="slide level2">
+<h2>Grep</h2>
+<table>
+<tbody>
+<tr class="odd">
+<td><code>-n</code></td>
+<td>Show line number</td>
+</tr>
+<tr class="even">
+<td><code>-v</code></td>
+<td>Select non matching lines</td>
+</tr>
+<tr class="odd">
+<td><code>-w</code></td>
+<td>Select exact matches</td>
+</tr>
+<tr class="even">
+<td><code>-i</code></td>
+<td>Ignore case distinctions</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<div class="sourceCode" id="cb60"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">grep</span> -ni <span class="st">&#39;goodbye&#39;</span> ficheiro1</span>
+<span id="cb60-2"><a href="#cb60-2" aria-hidden="true" tabindex="-1"></a><span class="ex">2</span>:Goodbye</span></code></pre></div>
 </section>
 <section id="useful-tips" class="slide level2">
 <h2>Useful Tips</h2>

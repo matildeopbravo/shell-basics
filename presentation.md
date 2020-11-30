@@ -383,7 +383,6 @@ cd ~/universidade/1ano1sem/PF ; code ficha1
 ```bash
 cd ~/universidade || cd ~/uni
 ```
-
 ## Finding
 
 ```bash
@@ -400,8 +399,22 @@ find . -name "ficheiro*"
 
 ```bash
 find ~/Pictures -name "*.jpg"
-
 ```
+## Grep
+
+|        |                           |
+|--------|---------------------------|
+| `-n`   | Show line number          |
+| `-v`   | Select non matching lines |
+| `-w`   | Select exact matches      |
+| `-i`   | Ignore case distinctions  |
+
+<br>
+```bash
+$ grep -ni 'goodbye' ficheiro1
+2:Goodbye
+```
+
 ## Useful Tips
 - Navegar histórico com **↑** e **↓**
 - **Tab** completion
@@ -414,5 +427,4 @@ find ~/Pictures -name "*.jpg"
 
 
 # Questões
-
 
