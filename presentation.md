@@ -354,6 +354,21 @@ $ wget "https://bit.ly/2HNtDEN" -o cesiumlogo.png
 ```
 
 # Miscellaneous
+
+## Alias
+
+```bash
+$ alias please='sudo'
+```
+
+```bash
+$ alias li='cd ~/universidade/1ano1sem/li'
+```
+
+```bash
+$ alias gc='git commit -m'
+```
+
 ## Globbing
 
 Mostra todos os ficheiros que terminam em  `.hs`
