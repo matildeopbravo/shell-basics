@@ -20,6 +20,7 @@
     pre > code.sourceCode { white-space: pre; position: relative; }
     pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
     pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
     code.sourceCode > span { color: inherit; text-decoration: inherit; }
     div.sourceCode { margin: 1em 0; }
     pre.sourceCode { margin: 0; }
@@ -130,25 +131,25 @@ e.g: <strong>Konsole</strong>
 <section id="file-tree-example" class="slide level2">
 <h2>File tree example</h2>
 <p><code>.</code> simboliza a diretoria atual</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">.</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>├── <span class="ex">ficheiro1</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>├── <span class="ex">ficheiro2</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>├── <span class="ex">ficheiro3</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>├── <span class="ex">ficheiro4</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>└── <span class="ex">universidade</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    └── <span class="ex">1ano1sem</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>        ├── <span class="ex">Algebra</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>        ├── <span class="ex">Calculo</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>        ├── <span class="ex">EES</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>        ├── <span class="ex">LI1</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>        ├── <span class="ex">PF</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>        └── <span class="ex">TMD</span></span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">.</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">├──</span> ficheiro1</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">├──</span> ficheiro2</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ex">├──</span> ficheiro3</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ex">├──</span> ficheiro4</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="ex">└──</span> universidade</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="ex">└──</span> 1ano1sem</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>        <span class="ex">├──</span> Algebra</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>        <span class="ex">├──</span> Calculo</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>        <span class="ex">├──</span> EES</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>        <span class="ex">├──</span> LI1</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>        <span class="ex">├──</span> PF</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>        <span class="ex">└──</span> TMD</span></code></pre></div>
 </section>
 <section id="ls---list-files-and-directories" class="slide level2">
 <h2>ls - List files and directories</h2>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">ls</span></span>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">ficheiro1</span> ficheiro2 ficheiro3 ficheiro4 universidade</span></code></pre></div>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">ls</span> -l</span>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span> <span class="at">-l</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ex">total</span> 8</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="ex">drwxr-xr-x</span> 3 matilde matilde 4096 Nov 25 17:22 universidade</span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="ex">-rw-r--r--</span> 1 matilde matilde    4 Nov 24 21:28 ficheiro1</span>
@@ -158,7 +159,7 @@ e.g: <strong>Konsole</strong>
 </section>
 <section id="section-2" class="slide level2">
 <h2></h2>
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">ls</span> -la <span class="co"># ls -l -a</span></span>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span> <span class="at">-la</span> <span class="co"># ls -l -a</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ex">total</span> 44</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="ex">drwx------</span> 5 matilde matilde 4096 Nov 25 17:29 .</span>
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="ex">drwxr-xr-x</span> 4 root    root    4096 Nov 24 21:15 ..</span>
@@ -177,7 +178,7 @@ e.g: <strong>Konsole</strong>
 </section>
 <section id="man---manual-pages" class="slide level2">
 <h2>man - Manual pages</h2>
-<div class="sourceCode" id="cb5"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">man</span> ls</span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">man</span> ls</span></code></pre></div>
 <pre><code>NAME
        ls - list directory contents
 
@@ -199,41 +200,41 @@ DESCRIPTION:
 </section>
 <section id="cd---change-directory" class="slide level2">
 <h2>cd - Change directory</h2>
-<div class="sourceCode" id="cb7"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>$ <span class="bu">cd</span> universidade</span></code></pre></div>
-<div class="sourceCode" id="cb8"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">ls</span></span>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a> <span class="bu">cd</span> universidade</span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">ls</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="ex">1ano1sem</span></span></code></pre></div>
-<div class="sourceCode" id="cb9"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>$ <span class="bu">cd</span> 1ano1sem/PF</span></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a> <span class="bu">cd</span> 1ano1sem/PF</span></code></pre></div>
 </section>
 <section id="section-3" class="slide level2">
 <h2></h2>
 <p>Go back one directory</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>$ <span class="bu">cd</span> ..</span></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a> <span class="bu">cd</span> ..</span></code></pre></div>
 <p>Return to user’s home directory <strong><code>/home/matilde</code></strong></p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>$ <span class="bu">cd</span> ~ <span class="co"># ou apenas cd</span></span></code></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a> <span class="bu">cd</span> ~ <span class="co"># ou apenas cd</span></span></code></pre></div>
 <p><strong>/</strong> represents <strong>root</strong> directory</p>
 </section>
 <section id="relative-vs-absolute-paths" class="slide level2">
 <h2>Relative vs absolute paths</h2>
 <p>Situando-me na diretoria <strong>PF</strong></p>
 <p>Caminho relativo até à diretoria <strong>LI1</strong></p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>$ <span class="bu">cd</span> ../LI1</span></code></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a> <span class="bu">cd</span> ../LI1</span></code></pre></div>
 <p>
 Caminho absoluto até à diretoria <strong>LI1</strong>
 </p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>$ <span class="bu">cd</span> /home/matilde/universidade/1ano1sem/LI1</span></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a> <span class="bu">cd</span> /home/matilde/universidade/1ano1sem/LI1</span></code></pre></div>
 </section>
 <section id="section-4" class="slide level2">
 <h2></h2>
-<div class="sourceCode" id="cb14"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>$ <span class="bu">cd</span> /home/matilde/universidade</span></code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a> <span class="bu">cd</span> /home/matilde/universidade</span></code></pre></div>
 <p>É equivalente a :</p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>$ <span class="bu">cd</span> ~/universidade</span></code></pre></div>
-<p>E a :</p>
-<div class="sourceCode" id="cb16"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>$ <span class="bu">cd</span> ../..</span></code></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a> <span class="bu">cd</span> ~/universidade</span></code></pre></div>
+<p>E também a :</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a> <span class="bu">cd</span> ../..</span></code></pre></div>
 </section>
 <section id="pwd---print-work-directory" class="slide level2">
 <h2>pwd - Print Work Directory</h2>
 <p>Assumindo que fizemos <strong><code>cd</code></strong> para a diretoria <strong>PF</strong></p>
-<div class="sourceCode" id="cb17"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>$ <span class="bu">pwd</span></span>
+<div class="sourceCode" id="cb17"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a> <span class="bu">pwd</span></span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="ex">/home/matilde/universidade/1ano1sem/PF</span></span></code></pre></div>
 </section></section>
 <section>
@@ -243,10 +244,10 @@ Caminho absoluto até à diretoria <strong>LI1</strong>
 </section>
 <section id="mkdir---make-directory" class="slide level2">
 <h2>mkdir - Make directory</h2>
-<div class="sourceCode" id="cb18"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">mkdir</span> series</span></code></pre></div>
-<div class="sourceCode" id="cb19"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">mkdir</span> series/mr_robot/season1</span>
-<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>  <span class="ex">mkdir</span>: cannot create directory ‘series/mr_robot/season1’: No such file or directory</span></code></pre></div>
-<div class="sourceCode" id="cb20"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">mkdir</span> -p series/mr_robot/season1</span></code></pre></div>
+<div class="sourceCode" id="cb18"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">mkdir</span> series</span></code></pre></div>
+<div class="sourceCode" id="cb19"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> series/mr_robot/season1</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>  <span class="ex">mkdir:</span> cannot create directory ‘series/mr_robot/season1’: No such file or directory</span></code></pre></div>
+<div class="sourceCode" id="cb20"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">mkdir</span> <span class="at">-p</span> series/mr_robot/season1</span></code></pre></div>
 </section>
 <section id="touch---create-empty-file" class="slide level2">
 <h2>touch - Create empty file</h2>
@@ -254,35 +255,35 @@ Caminho absoluto até à diretoria <strong>LI1</strong>
 </section>
 <section id="cat---display-files" class="slide level2">
 <h2>cat - Display files</h2>
-<div class="sourceCode" id="cb22"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">cat</span> ficheiro1</span>
+<div class="sourceCode" id="cb22"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">cat</span> ficheiro1</span>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="ex">ola</span></span></code></pre></div>
-<div class="sourceCode" id="cb23"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">cat</span> notes</span></code></pre></div>
+<div class="sourceCode" id="cb23"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">cat</span> notes</span></code></pre></div>
 </section>
 <section id="cp---copy" class="slide level2">
 <h2>cp - Copy</h2>
 <p>Se estivermos na nossa home, neste caso, <code>/home/matilde</code></p>
-<div class="sourceCode" id="cb24"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">cp</span> ficheiro1 universidade</span></code></pre></div>
+<div class="sourceCode" id="cb24"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">cp</span> ficheiro1 universidade</span></code></pre></div>
 <p>Alternativamente, podemos utilizar o <strong>path absoluto</strong></p>
-<div class="sourceCode" id="cb25"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">cp</span> ~/ficheiro1 ~/universidade</span></code></pre></div>
+<div class="sourceCode" id="cb25"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">cp</span> ~/ficheiro1 ~/universidade</span></code></pre></div>
 <p>Copiar <strong>recursivamente</strong> para a diretoria atual</p>
-<div class="sourceCode" id="cb26"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">cp</span> -r ~/universidade/1ano1sem .</span></code></pre></div>
+<div class="sourceCode" id="cb26"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">cp</span> <span class="at">-r</span> ~/universidade/1ano1sem .</span></code></pre></div>
 </section>
 <section id="mv---move-or-rename" class="slide level2">
 <h2>mv - Move (or rename)</h2>
 <p>Se estivermos na diretoria <code>~</code></p>
-<div class="sourceCode" id="cb27"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">mv</span> ficheiro1 universidade/1ano1sem/PF</span></code></pre></div>
+<div class="sourceCode" id="cb27"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">mv</span> ficheiro1 universidade/1ano1sem/PF</span></code></pre></div>
 <p>Mudar o nome de uma diretoria</p>
-<div class="sourceCode" id="cb28"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">mv</span> universidade uni</span></code></pre></div>
+<div class="sourceCode" id="cb28"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">mv</span> universidade uni</span></code></pre></div>
 </section>
 <section id="rm---remove" class="slide level2">
 <h2>rm - Remove</h2>
-<div class="sourceCode" id="cb29"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">rm</span> ~/universidade/1ano1sem/PF/ficheiro1</span></code></pre></div>
-<div class="sourceCode" id="cb30"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">rm</span>  ~/universidade/1ano1sem/LI1</span>
-<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>  <span class="ex">rm</span>: cannot remove <span class="st">&#39;universidade/1ano1sem/LI1/&#39;</span>: Is a directory</span></code></pre></div>
+<div class="sourceCode" id="cb29"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">rm</span> ~/universidade/1ano1sem/PF/ficheiro1</span></code></pre></div>
+<div class="sourceCode" id="cb30"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">rm</span>  ~/universidade/1ano1sem/LI1</span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>  <span class="ex">rm:</span> cannot remove <span class="st">&#39;universidade/1ano1sem/LI1/&#39;</span>: Is a directory</span></code></pre></div>
 <p>Para apagar uma diretoria temos que remover recursivamente</p>
-<div class="sourceCode" id="cb31"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">rm</span>  -r ~/universidade/1ano1sem/LI1</span></code></pre></div>
+<div class="sourceCode" id="cb31"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">rm</span>  <span class="at">-r</span> ~/universidade/1ano1sem/LI1</span></code></pre></div>
 <p>Para forçar</p>
-<div class="sourceCode" id="cb32"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">rm</span>  -rf ~/universidade/1ano1sem/LI1</span></code></pre></div>
+<div class="sourceCode" id="cb32"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">rm</span>  <span class="at">-rf</span> ~/universidade/1ano1sem/LI1</span></code></pre></div>
 </section></section>
 <section>
 <section id="redirection-and-pipes" class="title-slide slide level1">
@@ -292,13 +293,13 @@ Caminho absoluto até à diretoria <strong>LI1</strong>
 <section id="output-redirection" class="slide level2">
 <h2>Output redirection</h2>
 <p>Apresentar texto</p>
-<div class="sourceCode" id="cb33"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>$ <span class="bu">echo</span> <span class="st">&quot;Hello World&quot;</span></span>
+<div class="sourceCode" id="cb33"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a> <span class="bu">echo</span> <span class="st">&quot;Hello World&quot;</span></span>
 <span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a><span class="ex">Hello</span> World</span></code></pre></div>
 <p>Adicionar texto a um ficheiro(overwrite)</p>
-<div class="sourceCode" id="cb34"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>$ <span class="bu">echo</span> <span class="st">&quot;Hello World&quot;</span> <span class="op">&gt;</span> ficheiro1</span></code></pre></div>
+<div class="sourceCode" id="cb34"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a> <span class="bu">echo</span> <span class="st">&quot;Hello World&quot;</span> <span class="op">&gt;</span> ficheiro1</span></code></pre></div>
 <p>Acrescentar texto a um ficheiro(append)</p>
-<div class="sourceCode" id="cb35"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>$ <span class="bu">echo</span> <span class="st">&quot;Goodbye&quot;</span> <span class="op">&gt;&gt;</span> ficheiro1</span></code></pre></div>
-<div class="sourceCode" id="cb36"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">cat</span> ficheiro1</span>
+<div class="sourceCode" id="cb35"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a> <span class="bu">echo</span> <span class="st">&quot;Goodbye&quot;</span> <span class="op">&gt;&gt;</span> ficheiro1</span></code></pre></div>
+<div class="sourceCode" id="cb36"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">cat</span> ficheiro1</span>
 <span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a><span class="ex">Hello</span> World</span>
 <span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a><span class="ex">Goodbye</span></span></code></pre></div>
 </section>
@@ -306,31 +307,31 @@ Caminho absoluto até à diretoria <strong>LI1</strong>
 <h2></h2>
 <h4 id="input-redirection">Input redirection</h4>
 <p>Fornecer o conteúdo de um ficheiro como input</p>
-<div class="sourceCode" id="cb37"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">cat</span> <span class="op">&lt;</span> ficheiro1</span>
+<div class="sourceCode" id="cb37"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">cat</span> <span class="op">&lt;</span> ficheiro1</span>
 <span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a><span class="ex">Hello</span> World</span>
 <span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a><span class="ex">Goodbye</span></span></code></pre></div>
 <h4 id="pipes">Pipes</h4>
 <p>Conta o número de ficheiros (não escondidos)</p>
-<div class="sourceCode" id="cb38"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">ls</span> <span class="kw">|</span> <span class="fu">wc</span> -l</span>
+<div class="sourceCode" id="cb38"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">ls</span> <span class="kw">|</span> <span class="fu">wc</span> <span class="at">-l</span></span>
 <span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a><span class="ex">5</span></span></code></pre></div>
 <p>Mostra o nome dos dois primeiros ficheiros (alfabeticamente)</p>
-<div class="sourceCode" id="cb39"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">ls</span> <span class="kw">|</span> <span class="fu">head</span> -2</span>
+<div class="sourceCode" id="cb39"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">ls</span> <span class="kw">|</span> <span class="fu">head</span> <span class="at">-2</span></span>
 <span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a><span class="ex">ficheiro1</span></span>
 <span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a><span class="ex">ficheiro2</span></span></code></pre></div>
 </section>
 <section id="section-6" class="slide level2">
 <h2></h2>
 <p>Mostra todos os ficheiros com a palavra ‘ficheiro’ no nome</p>
-<div class="sourceCode" id="cb40"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">ls</span> <span class="kw">|</span> <span class="fu">grep</span> <span class="st">&quot;ficheiro&quot;</span></span>
+<div class="sourceCode" id="cb40"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">ls</span> <span class="kw">|</span> <span class="fu">grep</span> <span class="st">&quot;ficheiro&quot;</span></span>
 <span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a><span class="ex">ficheiro1</span></span>
 <span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a><span class="ex">ficheiro2</span></span>
 <span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a><span class="ex">ficheiro3</span></span>
 <span id="cb40-5"><a href="#cb40-5" aria-hidden="true" tabindex="-1"></a><span class="ex">ficheiro4</span></span></code></pre></div>
 <p>Mostra o número de caracteres da ultima linha do ficheiro1</p>
-<div class="sourceCode" id="cb41"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">cat</span> ficheiro1 <span class="kw">|</span> <span class="fu">tail</span> -1 <span class="kw">|</span> <span class="fu">wc</span> -m</span>
+<div class="sourceCode" id="cb41"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">cat</span> ficheiro1 <span class="kw">|</span> <span class="fu">tail</span> <span class="at">-1</span> <span class="kw">|</span> <span class="fu">wc</span> <span class="at">-m</span></span>
 <span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a><span class="ex">8</span></span></code></pre></div>
 <p>Mostra o que está antes do caracter ‘-’ na string fornecida</p>
-<div class="sourceCode" id="cb42"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>$ <span class="bu">echo</span> <span class="st">&quot;Shell-Basics&quot;</span> <span class="kw">|</span> <span class="fu">cut</span> -d <span class="st">&#39;-&#39;</span> -f1</span>
+<div class="sourceCode" id="cb42"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a> <span class="bu">echo</span> <span class="st">&quot;Shell-Basics&quot;</span> <span class="kw">|</span> <span class="fu">cut</span> <span class="at">-d</span> <span class="st">&#39;-&#39;</span> <span class="at">-f1</span></span>
 <span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a><span class="ex">Shell</span></span></code></pre></div>
 </section></section>
 <section>
@@ -348,27 +349,27 @@ Caminho absoluto até à diretoria <strong>LI1</strong>
 <section id="section-7" class="slide level2">
 <h2></h2>
 <h4 id="install-a-package">Install a package</h4>
-<div class="sourceCode" id="cb43"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">sudo</span> apt install curl</span>
-<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">sudo</span> pacman -S curl</span></code></pre></div>
+<div class="sourceCode" id="cb43"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">sudo</span> apt install curl</span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a> <span class="fu">sudo</span> pacman <span class="at">-S</span> curl</span></code></pre></div>
 <h4 id="update-database">Update Database</h4>
-<div class="sourceCode" id="cb44"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">sudo</span> apt update</span>
-<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">sudo</span> pacman -Syy</span></code></pre></div>
+<div class="sourceCode" id="cb44"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">sudo</span> apt update</span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a> <span class="fu">sudo</span> pacman <span class="at">-Syy</span></span></code></pre></div>
 </section>
 <section id="section-8" class="slide level2">
 <h2></h2>
 <h4 id="upgrade">Upgrade</h4>
-<div class="sourceCode" id="cb45"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">sudo</span> apt upgrade</span>
-<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">sudo</span> pacman -Syu</span></code></pre></div>
+<div class="sourceCode" id="cb45"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">sudo</span> apt upgrade</span>
+<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a> <span class="fu">sudo</span> pacman <span class="at">-Syu</span></span></code></pre></div>
 <h4 id="list-installed-packages">List installed packages</h4>
-<div class="sourceCode" id="cb46"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">sudo</span> apt list --installed</span>
-<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">sudo</span> pacman -Qe</span></code></pre></div>
+<div class="sourceCode" id="cb46"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">sudo</span> apt list <span class="at">--installed</span></span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a> <span class="fu">sudo</span> pacman <span class="at">-Qe</span></span></code></pre></div>
 </section>
 <section id="web-transfer" class="slide level2">
 <h2>Web transfer</h2>
-<div class="sourceCode" id="cb47"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">curl</span> <span class="st">&quot;https://cesium.di.uminho.pt&quot;</span></span></code></pre></div>
-<div class="sourceCode" id="cb48"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">curl</span> <span class="st">&quot;https://cesium.di.uminho.pt&quot;</span> <span class="op">&gt;</span> file</span></code></pre></div>
-<div class="sourceCode" id="cb49"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">curl</span> <span class="st">&quot;https://cesium.di.uminho.pt&quot;</span> <span class="kw">|</span> <span class="fu">grep</span> <span class="st">&#39;estudantes&#39;</span></span></code></pre></div>
-<div class="sourceCode" id="cb50"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">wget</span> <span class="st">&quot;https://bit.ly/2HNtDEN&quot;</span> -o cesiumlogo.png</span></code></pre></div>
+<div class="sourceCode" id="cb47"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a> <span class="ex">curl</span> <span class="st">&quot;https://cesium.di.uminho.pt&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb48"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a> <span class="ex">curl</span> <span class="st">&quot;https://cesium.di.uminho.pt&quot;</span> <span class="op">&gt;</span> file</span></code></pre></div>
+<div class="sourceCode" id="cb49"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a> <span class="ex">curl</span> <span class="st">&quot;https://cesium.di.uminho.pt&quot;</span> <span class="kw">|</span> <span class="fu">grep</span> <span class="st">&#39;estudantes&#39;</span></span></code></pre></div>
+<div class="sourceCode" id="cb50"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">wget</span> <span class="st">&quot;https://bit.ly/2HNtDEN&quot;</span> <span class="at">-o</span> cesiumlogo.png</span></code></pre></div>
 </section></section>
 <section>
 <section id="miscellaneous" class="title-slide slide level1">
@@ -378,28 +379,28 @@ Caminho absoluto até à diretoria <strong>LI1</strong>
 <section id="globbing" class="slide level2">
 <h2>Globbing</h2>
 <p>Mostra todos os ficheiros que terminam em <code>.hs</code></p>
-<div class="sourceCode" id="cb51"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">ls</span> *.hs</span></code></pre></div>
+<div class="sourceCode" id="cb51"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">ls</span> <span class="pp">*</span>.hs</span></code></pre></div>
 <p>Copia todos os ficheiros da diretoria atual para a <code>new_directory</code></p>
-<div class="sourceCode" id="cb52"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">cp</span> * new_directory</span></code></pre></div>
+<div class="sourceCode" id="cb52"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">cp</span> <span class="pp">*</span> new_directory</span></code></pre></div>
 <p>Apaga todos os ficheiros começados por ‘ficheiro’</p>
-<div class="sourceCode" id="cb53"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">rm</span> ficheiro*</span></code></pre></div>
+<div class="sourceCode" id="cb53"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">rm</span> ficheiro<span class="pp">*</span></span></code></pre></div>
 </section>
 <section id="operators" class="slide level2">
 <h2>Operators</h2>
-<div class="sourceCode" id="cb54"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit -m <span class="st">&quot;new commit&quot;</span> <span class="kw">&amp;&amp;</span> <span class="fu">git</span> push</span></code></pre></div>
+<div class="sourceCode" id="cb54"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">&quot;new commit&quot;</span> <span class="kw">&amp;&amp;</span> <span class="fu">git</span> push</span></code></pre></div>
 <div class="sourceCode" id="cb55"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> ~/universidade/1ano1sem/PF <span class="kw">;</span> <span class="ex">code</span> ficha1</span></code></pre></div>
 <div class="sourceCode" id="cb56"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> ~/universidade <span class="kw">||</span> <span class="bu">cd</span> ~/uni</span></code></pre></div>
 </section>
 <section id="finding" class="slide level2">
 <h2>Finding</h2>
-<div class="sourceCode" id="cb57"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a><span class="fu">find</span> . -name ficheiro1</span>
+<div class="sourceCode" id="cb57"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a><span class="fu">find</span> . <span class="at">-name</span> ficheiro1</span>
 <span id="cb57-2"><a href="#cb57-2" aria-hidden="true" tabindex="-1"></a><span class="ex">./ficheiro1</span></span></code></pre></div>
-<div class="sourceCode" id="cb58"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a><span class="fu">find</span> . -name <span class="st">&quot;ficheiro*&quot;</span></span>
+<div class="sourceCode" id="cb58"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a><span class="fu">find</span> . <span class="at">-name</span> <span class="st">&quot;ficheiro*&quot;</span></span>
 <span id="cb58-2"><a href="#cb58-2" aria-hidden="true" tabindex="-1"></a><span class="ex">./ficheiro3</span></span>
 <span id="cb58-3"><a href="#cb58-3" aria-hidden="true" tabindex="-1"></a><span class="ex">./ficheiro1</span></span>
 <span id="cb58-4"><a href="#cb58-4" aria-hidden="true" tabindex="-1"></a><span class="ex">./ficheiro2</span></span>
 <span id="cb58-5"><a href="#cb58-5" aria-hidden="true" tabindex="-1"></a><span class="ex">./ficheiro4</span></span></code></pre></div>
-<div class="sourceCode" id="cb59"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a><span class="fu">find</span> ~/Pictures -name <span class="st">&quot;*.jpg&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb59"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a><span class="fu">find</span> ~/Pictures <span class="at">-name</span> <span class="st">&quot;*.jpg&quot;</span></span></code></pre></div>
 </section>
 <section id="useful-tips" class="slide level2">
 <h2>Useful Tips</h2>
@@ -424,7 +425,7 @@ Caminho absoluto até à diretoria <strong>LI1</strong>
 
   <script src="./reveal.js/dist/reveal.js"></script>
 
-  // reveal.js plugins
+  <!-- reveal.js plugins -->
   <script src="./reveal.js/plugin/notes/notes.js"></script>
   <script src="./reveal.js/plugin/search/search.js"></script>
   <script src="./reveal.js/plugin/zoom/zoom.js"></script>
@@ -434,8 +435,145 @@ Caminho absoluto até à diretoria <strong>LI1</strong>
       // Full list of configuration options available at:
       // https://revealjs.com/config/
       Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: true,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'bottom-right',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: false,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
         // Push each slide change to the browser history
-        history: true,
+        history: false,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: true,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'default',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: true,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'slide',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'fade',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
 
         // reveal.js plugins
         plugins: [

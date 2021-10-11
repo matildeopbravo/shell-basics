@@ -7,7 +7,6 @@ all:
 	  presentation.md \
 	  -V revealjs-url=./reveal.js \
       -V theme=my_moon
-	sed -i 's/<span class="ex">curl/<span class="fu">curl/' index.html
 show:
 	xdg-open index.html
 auto:
