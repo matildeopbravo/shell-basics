@@ -7,7 +7,7 @@ all:
 	  presentation.md \
 	  -V revealjs-url=./reveal.js \
       -V theme=my_moon
-	sed -i 's/<span class="ex">curl/<span class="fu">curl/' index.html
+	  sed -r -i 's;(\$$<\/span>)(\s?\w+)(.*<\/span>);\1<span class=\"fu\">\2<\/span>\3;g' index.html
 show:
 	xdg-open index.html
 auto:
