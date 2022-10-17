@@ -440,29 +440,6 @@ $ grep -ni 'goodbye' ficheiro1
 ##
 <img src="./img/miscellaneous.gif" width="1300" height=600"/>
 
-# Linux
-
-## Just a Kernel
-É a interface central entre o hardware e os processos executados por um computador. Estabelece a comunicação entre ambos, gerindo eficientemente recursos.
-
-## Linux Distro
-É um sistema operativo constituído apartir de uma coleção de software baseando no **kernel do Linux** e num **package manager**
-</br> e.g: **Ubuntu, Debian, Arch, Manjaro, NixOS, Solus, Fedora, OpenSUSE, Gentoo, Hannah Montana Linux**
-
-## Families of distros
-
-Podes ver todas as distros em [DistroWatch](https://distrowatch.com/)
-
-![](img/distro_family.svg)
-
-## Window Manager
-
-![](img/wm.png)
-
-## Desktop Environment
-
-![](img/de.png)
-
 
 # Questões
 
