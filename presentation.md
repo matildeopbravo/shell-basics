@@ -7,12 +7,12 @@ author: Matilde Bravo
 ##
 <h1> Shell </h1>
 <p class="first"> Programa que permite a comunicação com o **Sistema Operativo** </p>
-<p class="first">e.g: **Bash** </p>
+<p class="first">e.g: **Bash, Zsh** </p>
 
 ##
 <h1> Terminal </h1>
 <p class="first"> Interface que permite utilizar a **Shell** </p>
-<p class="first">e.g: **Konsole** </p>
+<p class="first">e.g: **Konsole, GNOME Terminal** </p>
 
 # Basic Commands
 
@@ -30,10 +30,10 @@ author: Matilde Bravo
     └── 1ano1sem
         ├── Algebra
         ├── Calculo
-        ├── EES
         ├── LI1
         ├── PF
-        └── TMD
+        ├── TMD
+        └── Opcao_UMinho
 ```
 ## ls - List files and directories
 
