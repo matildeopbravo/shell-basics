@@ -6,13 +6,35 @@ author: Matilde Bravo
 # Introdução
 ##
 <h1> Shell </h1>
-<p class="first"> Programa que permite a comunicação com o **Sistema Operativo** </p>
+<p class="first"> Interpretador de comandos que permite a comunicação com o **Sistema Operativo** </p>
 <p class="first">e.g: **Bash, Zsh** </p>
+<aside class="notes">
+    <ul>
+    <li> É o programa que serve como meio de comunicação entre o utilizador e o sistema operativo.  </li>
+    <li>  Interpreta os comandos fornecidos pelo utilizador e
+    de seguida faz os devidos pedidos aos sistema operativo. </li>
+    <li> A shell tem uma linguaguem de programação específica, que é aquilo que
+    vamos aprender hoje.</li>
+    <li> Existem várias shells </li>
+    </ul>
+
+</aside>
 
 ##
 <h1> Terminal </h1>
 <p class="first"> Interface que permite utilizar a **Shell** </p>
 <p class="first">e.g: **Konsole, GNOME Terminal** </p>
+<aside class="notes">
+    É um programa/interface que nos permite utilizar a
+    shell. Para a shell poder interpretar os comandos, é necessária uma forma de
+    lhos passar. O terminal é apenas o
+    meio onde vocês vão escrever os comandos. O terminal que escolhem depende
+    dos vossos gostos mas em nada influencia a forma como o código vai ser
+    executado, isso depende unicamente da shell. Gosto de ver o terminal como
+    uma espécie de editor de texto, vocês também escolhem vs code ou sublime
+    para escrever o código mas independentemente do que usem, o que importa para
+    o produto final é a linguagem de programação a ser utilizado.
+</aside>
 
 # Basic Commands
 
@@ -51,6 +73,12 @@ drwxr-xr-x 3 matilde matilde 4096 Nov 25 17:22 universidade
 -rw-r--r-- 1 matilde matilde    0 Nov 24 21:16 ficheiro3
 -rw-r--r-- 1 matilde matilde    0 Nov 24 21:16 ficheiro4
 ```
+<aside class="notes">
+    - tipo de ficheiro
+    - owner, group, other
+    - last modification
+
+</aside>
 ##
 ```bash
 $ ls -la # ls -l -a
@@ -111,17 +139,17 @@ $ ls
 $ cd 1ano1sem/PF
 ```
 ##
-Go back one directory
+Regressa uma diretoria
 ```bash
 $ cd ..
 
 ```
-Return to user's home directory **`/home/matilde`**
+Regressa à *home* do utilizador **`/home/matilde`**
 ```bash
 $ cd ~ # ou apenas cd
 ```
 
-**/** represents **root** directory
+**/** representa a diretoria **root**
 
 ## Relative vs absolute paths
 
@@ -358,7 +386,7 @@ $ wget "https://bit.ly/2HNtDEN" -o cesiumlogo.png
 ## Alias
 
 ```bash
-$ alias please='sudo'
+$ alias pls='sudo'
 ```
 
 ```bash
@@ -438,8 +466,6 @@ $ grep -ni 'goodbye' ficheiro1
 - **!!** para repetir o comando anterior (eg: sudo !!)
 
 ##
-<img src="./img/miscellaneous.gif" width="1300" height=600"/>
-
 
 # Questões
 

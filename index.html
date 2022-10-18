@@ -113,12 +113,31 @@
 Shell
 </h1>
 <p class="first">
-Programa que permite a comunicação com o <strong>Sistema
-Operativo</strong>
+Interpretador de comandos que permite a comunicação com o
+<strong>Sistema Operativo</strong>
 </p>
 <p class="first">
 e.g: <strong>Bash, Zsh</strong>
 </p>
+<aside class="notes">
+<ul>
+<li>
+É o programa que serve como meio de comunicação entre o utilizador e o
+sistema operativo.
+</li>
+<li>
+Interpreta os comandos fornecidos pelo utilizador e de seguida faz os
+devidos pedidos aos sistema operativo.
+</li>
+<li>
+A shell tem uma linguaguem de programação específica, que é aquilo que
+vamos aprender hoje.
+</li>
+<li>
+Existem várias shells
+</li>
+</ul>
+</aside>
 </section>
 <section id="section-1" class="slide level2">
 <h2></h2>
@@ -131,6 +150,17 @@ Interface que permite utilizar a <strong>Shell</strong>
 <p class="first">
 e.g: <strong>Konsole, GNOME Terminal</strong>
 </p>
+<aside class="notes">
+É um programa/interface que nos permite utilizar a shell. Para a shell
+poder interpretar os comandos, é necessária uma forma de lhos passar. O
+terminal é apenas o meio onde vocês vão escrever os comandos. O terminal
+que escolhem depende dos vossos gostos mas em nada influencia a forma
+como o código vai ser executado, isso depende unicamente da shell. Gosto
+de ver o terminal como uma espécie de editor de texto, vocês também
+escolhem vs code ou sublime para escrever o código mas independentemente
+do que usem, o que importa para o produto final é a linguagem de
+programação a ser utilizado.
+</aside>
 </section></section>
 <section>
 <section id="basic-commands" class="title-slide slide level1">
@@ -168,6 +198,15 @@ class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="
 <span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="ex">-rw-r--r--</span> 1 matilde matilde    0 Nov 24 21:16 ficheiro2</span>
 <span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="ex">-rw-r--r--</span> 1 matilde matilde    0 Nov 24 21:16 ficheiro3</span>
 <span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="ex">-rw-r--r--</span> 1 matilde matilde    0 Nov 24 21:16 ficheiro4</span></code></pre></div>
+<aside class="notes">
+<ul>
+<li>tipo de ficheiro
+<ul>
+<li>owner, group, other</li>
+<li>last modification</li>
+</ul></li>
+</ul>
+</aside>
 </section>
 <section id="section-2" class="slide level2">
 <h2></h2>
@@ -224,14 +263,14 @@ class="sourceCode bash"><code class="sourceCode bash"><span id="cb9-1"><a href="
 </section>
 <section id="section-3" class="slide level2">
 <h2></h2>
-<p>Go back one directory</p>
+<p>Regressa uma diretoria</p>
 <div class="sourceCode" id="cb10"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span><span class="fu"> cd</span> ..</span></code></pre></div>
-<p>Return to user’s home directory
+<p>Regressa à <em>home</em> do utilizador
 <strong><code>/home/matilde</code></strong></p>
 <div class="sourceCode" id="cb11"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span><span class="fu"> cd</span> ~ <span class="co"># ou apenas cd</span></span></code></pre></div>
-<p><strong>/</strong> represents <strong>root</strong> directory</p>
+<p><strong>/</strong> representa a diretoria <strong>root</strong></p>
 </section>
 <section id="relative-vs-absolute-paths" class="slide level2">
 <h2>Relative vs absolute paths</h2>
@@ -442,7 +481,7 @@ class="sourceCode bash"><code class="sourceCode bash"><span id="cb50-1"><a href=
 <section id="alias" class="slide level2">
 <h2>Alias</h2>
 <div class="sourceCode" id="cb51"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span><span class="fu"> alias</span> please=<span class="st">&#39;sudo&#39;</span></span></code></pre></div>
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span><span class="fu"> alias</span> pls=<span class="st">&#39;sudo&#39;</span></span></code></pre></div>
 <div class="sourceCode" id="cb52"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span><span class="fu"> alias</span> li=<span class="st">&#39;cd ~/universidade/1ano1sem/li&#39;</span></span></code></pre></div>
 <div class="sourceCode" id="cb53"><pre
@@ -525,7 +564,6 @@ limpar o ecrã</li>
 </section>
 <section id="section-9" class="slide level2">
 <h2></h2>
-<p><img src="./img/miscellaneous.gif" width="1300" height=600"/></p>
 </section></section>
 <section id="questões" class="title-slide slide level1">
 <h1>Questões</h1>
