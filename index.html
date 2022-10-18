@@ -274,26 +274,27 @@ class="sourceCode bash"><code class="sourceCode bash"><span id="cb11-1"><a href=
 </section>
 <section id="relative-vs-absolute-paths" class="slide level2">
 <h2>Relative vs absolute paths</h2>
-<p>Situando-me na diretoria <strong>PF</strong></p>
-<p>Caminho relativo até à diretoria <strong>LI1</strong></p>
+<p>Caminho relativo de <em>~</em> para <strong>LI1</strong></p>
 <div class="sourceCode" id="cb12"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span><span class="fu"> cd</span> ../LI1</span></code></pre></div>
-<p>
-Caminho absoluto até à diretoria <strong>LI1</strong>
-</p>
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span><span class="fu"> cd</span> LI1</span></code></pre></div>
+<p>Caminho relativo de <strong>LI1</strong> para <strong>PF</strong></p>
 <div class="sourceCode" id="cb13"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span><span class="fu"> cd</span> /home/matilde/universidade/1ano1sem/LI1</span></code></pre></div>
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span><span class="fu"> cd</span> ../PF</span></code></pre></div>
+<p>Caminho relativo de <strong>LI1</strong> para
+<strong>universidade</strong></p>
+<div class="sourceCode" id="cb14"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span><span class="fu"> cd</span> ../../</span></code></pre></div>
 </section>
 <section id="section-4" class="slide level2">
 <h2></h2>
-<div class="sourceCode" id="cb14"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span><span class="fu"> cd</span> /home/matilde/universidade</span></code></pre></div>
-<p>É equivalente a :</p>
+<p>
+Caminho absoluto até à diretoria <strong>universidade</strong>
+</p>
 <div class="sourceCode" id="cb15"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span><span class="fu"> cd</span> ~/universidade</span></code></pre></div>
-<p>E também a :</p>
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span><span class="fu"> cd</span> /home/matilde/universidade</span></code></pre></div>
+<p>É equivalente a :</p>
 <div class="sourceCode" id="cb16"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span><span class="fu"> cd</span> ../..</span></code></pre></div>
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span><span class="fu"> cd</span> ~/universidade</span></code></pre></div>
 </section>
 <section id="pwd---print-work-directory" class="slide level2">
 <h2>pwd - Print Work Directory</h2>

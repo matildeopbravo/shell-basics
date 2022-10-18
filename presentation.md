@@ -154,20 +154,23 @@ $ cd ~ # ou apenas cd
 ## Relative vs absolute paths
 
 
-Situando-me na diretoria **PF**
-
-Caminho relativo até à diretoria **LI1**
+Caminho relativo de *~* para **LI1**
 ```bash
-$ cd ../LI1
+$ cd LI1
 ```
-<p> Caminho absoluto até à diretoria **LI1** </p>
+
+Caminho relativo de **LI1** para **PF**
 ```bash
-$ cd /home/matilde/universidade/1ano1sem/LI1
+$ cd ../PF
+```
+Caminho relativo de **LI1** para **universidade**
+```bash
+$ cd ../../
 ```
 ##
+<p> Caminho absoluto até à diretoria **universidade** </p>
 ```bash
 $ cd /home/matilde/universidade
-
 ```
 É equivalente a :
 
@@ -175,13 +178,6 @@ $ cd /home/matilde/universidade
 $ cd ~/universidade
 
 ```
-E também a :
-
-```bash
-$ cd ../..
-
-```
-
 ## pwd - Print Work Directory
 Assumindo que fizemos **`cd`** para a diretoria **PF**
 ```bash
