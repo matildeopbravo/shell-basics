@@ -154,7 +154,7 @@ $ cd ~ # ou apenas cd
 ## Relative vs absolute paths
 
 
-Caminho relativo de *~* para **LI1**
+Caminho relativo de **1ano1sem** para **LI1**
 ```bash
 $ cd LI1
 ```
