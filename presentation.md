@@ -333,7 +333,7 @@ Shell
 
 # Installing
 ## Package Manager
-- apt/apt-get (e.g: Ubuntu,PopOS)
+- apt (e.g: Ubuntu,PopOS)
 - pacman (eg: Manjaro)
 
 ##
