@@ -192,7 +192,8 @@ $ mkdir series
 ```
 ```bash
 $ mkdir series/mr_robot/season1
-  mkdir: cannot create directory ‘series/mr_robot/season1’: No such file or directory
+  mkdir: cannot create directory ‘series/mr_robot/season1’:
+  No such file or directory
 ```
 
 ```bash
