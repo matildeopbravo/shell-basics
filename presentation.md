@@ -178,7 +178,7 @@ $ cd /home/matilde/universidade
 $ cd ~/universidade
 
 ```
-## pwd - Print Work Directory
+## pwd - Print Working Directory
 Assumindo que fizemos **`cd`** para a diretoria **PF**
 ```bash
 $ pwd
